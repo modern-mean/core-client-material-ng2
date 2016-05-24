@@ -1,3 +1,17 @@
-<h1>
-  {{title}}
-</h1>
+<md-sidenav-layout>
+
+  <md-sidenav #leftnav align="start" mode="side" opened="true" style="min-width: 0%" >
+    <app-leftnav [nav]="leftnav"></app-leftnav>
+  </md-sidenav>
+
+  <md-sidenav #rightnav  align="end">
+    <app-rightnav [nav]="rightnav"></app-rightnav>
+  </md-sidenav>
+
+  <app-header (toggleRightnav)="rightnav.toggle()" (toggleLeftnav)="leftnav.toggle()" [leftnav]="leftnav" [rightnav]="rightnav"></app-header>
+
+  <h1>
+    {{title}}
+  </h1>
+  <app-footer></app-footer>
+</md-sidenav-layout>

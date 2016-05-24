@@ -1,0 +1,16 @@
+<md-toolbar color="primary" *ngIf="!minimized">
+  <span >MODERN-MEAN</span>
+  <button md-icon-button aria-label="Minimize Left Menu" (click)="nav.toggle()" >
+    <md-icon *ngIf="!minimized">keyboard_arrow_left</md-icon>
+  </button>
+</md-toolbar>
+
+<md-nav-list [class.minimized]="minimized" dense>
+  <md-list-item [class.minimized]="minimized">
+    <button md-icon-button aria-label="HomePage" >
+      <md-icon class="md-24">home</md-icon>
+      <span class="flex"></span>
+      <span *ngIf="!minimized">Homepage</span>
+    </button>
+  </md-list-item>
+</md-nav-list>

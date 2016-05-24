@@ -1,0 +1,8 @@
+.minimized {
+  padding: 0;
+  margin: 0;
+}
+
+.flex {
+  flex: 1 1 auto;
+}

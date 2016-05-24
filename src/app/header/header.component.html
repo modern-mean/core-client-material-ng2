@@ -1,0 +1,10 @@
+<md-toolbar>
+  <button md-mini-fab aria-label="Left Menu" (click)="leftToggle()" *ngIf="!leftnav.opened">
+    <md-icon>menu</md-icon>
+  </button>
+  <span>HomePage</span>
+  <span class="app-header-filler"></span>
+  <button md-mini-fab aria-label="Right Menu" (click)="rightToggle()">
+    <md-icon>more_vert</md-icon>
+  </button>
+</md-toolbar>
